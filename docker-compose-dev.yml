@@ -1,0 +1,14 @@
+services:
+  ml-cpu:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: dev
+    container_name: ml_cpu_dev
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+    tty: true
+    stdin_open: true
+    environment:
+      - PYTHONUNBUFFERED=1

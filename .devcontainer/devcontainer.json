@@ -1,0 +1,16 @@
+{
+  "name": "ml-cpu-dev",
+  "dockerComposeFile": "../docker-compose-dev.yml",
+  "service": "ml-cpu",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "golang.go"
+      ]
+    }
+  }
+}
