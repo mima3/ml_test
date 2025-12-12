@@ -126,6 +126,7 @@ func main() {
 	if tokenizer == nil {
 		log.Fatal("failed to load BertBaseUncased tokenizer")
 	}
+	tokenizer.WithPadding(nil)
 
 	// Python サンプルと同じテキスト
 	texts := []string{

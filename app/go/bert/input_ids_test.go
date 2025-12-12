@@ -41,6 +41,7 @@ func TestInputIDs(t *testing.T) {
 	if err != nil {
 		log.Fatalf("failed to load tokenizer.json: %v", err)
 	}
+	tokenizer.WithPadding(nil)
 	text := "This movie is great!"
 	act, err := encodeSingle(tokenizer, text, 128)
 	if err != nil {
