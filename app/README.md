@@ -63,3 +63,22 @@ go test -v
 # 推論
 go run eval_bert.go
 ```
+
+## node.js
+
+```
+cd app/node
+npm install
+```
+
+### mnistのサンプルコード
+
+```
+node eval_mnist.js
+``` 
+
+### bertのサンプルコード
+
+```
+node eval_bert.js
+```

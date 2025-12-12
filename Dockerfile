@@ -9,6 +9,9 @@ RUN apt-get update && \
         golang \
         curl \
         ca-certificates && \
+    # Node.js 25.x をインストール（NodeSource）
+    curl -fsSL https://deb.nodesource.com/setup_25.x | bash - && \
+    apt-get install -y --no-install-recommends nodejs && \
     rm -rf /var/lib/apt/lists/*
 
 # ONNX Runtime (CPU版) をインストール
